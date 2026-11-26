@@ -2,6 +2,7 @@ all: palera1n
 
 # Build the TRfree-branded executable; keep the upstream filename as a CI compatibility alias.
 palera1n: trra1n
+	ln -sf trra1n palera1n
 \tln -sf trra1n palera1n
 
 OBJDIR = obj
@@ -156,8 +157,8 @@ $(OBJDIR)/%.c.o: $(GENDIR)/gen-%.c $(wildcard ../include/*.h)
 $(OBJDIR)/%.c.o: %.c $(wildcard ../include/*.h)
 	$(CC) $(CFLAGS) -c -o $@ $<
 
-palera1n: $(OBJS)
-	$(CC) $(CFLAGS) $(LDFLAGS) $(OBJS) $(LIBS) -o palera1n
+trra1n: $(OBJS)
+	$(CC) $(CFLAGS) $(LDFLAGS) $(OBJS) $(LIBS) -o trra1n
 ifeq (,$(findstring macosx, $(CFLAGS)))
 ifneq (,$(findstring version-min=, $(CFLAGS)))
 	$(LDID) -Susb.xml trra1n
