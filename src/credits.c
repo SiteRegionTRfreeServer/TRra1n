@@ -4,22 +4,16 @@
 #define BAKERAIN_DEVELOPE_R "kok3shidoll"
 #endif
 #define THE_PLUSH "Ploosh"
-
 #define NEKO_DEVELOPE_R "HAHALOSAH"
 
-#define T void
-#define R print_credits(void) {
-#define O fprintf(
-#define U stderr,
-#define B "#\n# palera1n: " BUILD_TAG " \n#\n"
-#define L "# ========  Made by  =======\n"
-#define E "# Made by: Nick Chan, " THE_PLUSH ", Khcrysalis, Mineek, staturnz, " BAKERAIN_DEVELOPE_R ", " NEKO_DEVELOPE_R " \n"
-#define M "# ======== Thanks to =======\n"
-#define A "# Thanks to: llsc12, Nebula, Lrdsnow, nikias (libimobiledevice),\n"
-#define K "# checkra1n team (Siguza, axi0mx, littlelailo et al.),\n"
-#define I "# Procursus Team (Hayden Seay, Cameron Katri, Keto et.al)\n"
-#define N "# ==========================\n\n"
-#define G );
-#define S }
-
-T R O U B L E M A K I N G S
+void print_credits(void) {
+    fprintf(stderr,
+        "# TRra1n: " BUILD_TAG " - TRfree fork\\n"
+        "# Maintained by: TRfree (https://www.trfree.org)\\n"
+        "# Original project: palera1n (https://github.com/palera1n/palera1n)\\n"
+        "# Original authors: Nick Chan, " THE_PLUSH ", Khcrysalis, Mineek, staturnz, "
+        BAKERAIN_DEVELOPE_R ", " NEKO_DEVELOPE_R "\\n"
+        "# Thanks to: llsc12, Nebula, Lrdsnow, nikias (libimobiledevice),\\n"
+        "# checkra1n team, Procursus Team, and all upstream contributors.\\n"
+        "# TRfree is responsible only for changes in this fork.\\n\\n");
+}
