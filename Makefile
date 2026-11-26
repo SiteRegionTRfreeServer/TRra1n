@@ -73,9 +73,9 @@ LIBRARY_PATH =
 
 export SRC DEP UNAME CC STRIP CFLAGS LDFLAGS LIBS SHELL TARGET_OS DEV_BUILD BUILD_DATE BUILD_TAG BUILD_WHOAMI BUILD_STYLE BUILD_NUMBER BUILD_BRANCH CC_FOR_BUILD CFLAGS_FOR_BUILD
 
-all: palera1n
+all: trra1n
 
-palera1n: download-deps
+trra1n: download-deps
 	$(MAKE) -C src
 
 clean:
@@ -91,5 +91,7 @@ docs:
 distclean: clean
 	$(MAKE) -C src distclean
 
-.PHONY: all palera1n clean docs distclean
+palera1n: trra1n
+
+.PHONY: all trra1n palera1n clean docs distclean
 
