@@ -78,7 +78,7 @@ static int usage(int e, char* prog_name)
 			"t"
 #endif
 			"] [-e boot arguments] [-k Pongo image] [-o overlay file] [-r ramdisk file] [-K KPF file] [-i checkra1n file]\n"
-			"Copyright (C) 2024, palera1n team, All Rights Reserved.\n\n"
+			"TRra1n is maintained by TRfree. Original palera1n authors retain credit.\n\n"
 			"iOS/iPadOS/tvOS 15-26, bridgeOS 5-10 arm64 jailbreaking tool\n\n"
 			"\t--version\t\t\t\tPrint version\n"
 			"\t--force-revert\t\t\t\tRemove jailbreak\n"
@@ -350,7 +350,7 @@ int optparse(int argc, char* argv[]) {
 	}
 	if ((palerain_flags & palerain_option_palerain_version)) {
 		printf(
-			"palera1n " PALERAIN_VERSION "\n"
+			"TRra1n " PALERAIN_VERSION " (TRfree fork of palera1n)\n"
 			BUILD_COMMIT " " BUILD_NUMBER " (" BUILD_BRANCH ")\n\n"
 			"Build style: " BUILD_STYLE "\n"
 			"Build tag: " BUILD_TAG "\n"
