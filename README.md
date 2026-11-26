@@ -1,4 +1,11 @@
-# palera1n
+# TRra1n — palera1n by TRfree
+
+> **TRfree-maintained fork of [palera1n](https://github.com/palera1n/palera1n).**
+> TRra1n is based on the upstream palera1n project. The original authors, project identity, technical documentation and license notices remain credited to the palera1n team. TRfree maintains this fork independently; it is not an official palera1n release.
+
+**Publisher:** TRfree · [trfree.org](https://www.trfree.org) · **Upstream:** [palera1n/palera1n](https://github.com/palera1n/palera1n)
+
+---
 [![GitHub Release](https://img.shields.io/github/v/release/palera1n/palera1n?include_prereleases)](https://github.com/palera1n/palera1n/releases)
 [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/palera1n/palera1n/total)](https://github.com/palera1n/palera1n/releases)
 [![GitHub License](https://img.shields.io/github/license/palera1n/palera1n?color=%23C96FAD)](https://github.com/palera1n/palera1n/blob/main/LICENSE)
@@ -124,10 +131,10 @@ Make sure you're following the guides provided [here](https://palera.in), also w
 - Verbose from palera1n (specifying `-Vv` within palera1n)
 - Panic logs, if panicked then send latest `panic-full` log from your device.
 
-Create an issue here: https://github.com/palera1n/palera1n/issues/new/choose
+For issues specific to the TRfree fork, use the [TRra1n issue tracker](https://github.com/SiteRegionTRfreeServer/TRra1n/issues). For upstream palera1n issues, use https://github.com/palera1n/palera1n/issues/new/choose.
 
-## Credits
+## Credits and attribution
 
-[All credits for palera1n can be found here](https://palera.in/)
+TRra1n is a fork of [palera1n/palera1n](https://github.com/palera1n/palera1n). The original palera1n developers retain credit for their work. [All credits for palera1n can be found here](https://palera.in/).
 
-If proper credit isn't shown please message us or create an issue.
+TRfree maintains this fork and is responsible only for changes made in this repository. If proper upstream credit is missing, please contact the maintainers or open an issue.
