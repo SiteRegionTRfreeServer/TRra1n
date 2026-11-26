@@ -1,22 +1,22 @@
-Package: palera1n
-Name: palera1n
+Package: trra1n
+Name: TRra1n
 Version: @DEB_VERSION@
 Architecture: @DEB_ARCH@
-Maintainer: palera1n team
-Author: palera1n team
+Maintainer: TRfree
+Author: TRfree (fork of palera1n)
 Depends: usbmuxd
 Section: Utilities
 Priority: optional
-Homepage: https://palera.in
-Description: iOS 15.0+ semi-tethered checkm8 jailbreak
- palera1n is an iOS/iPadOS 15.0+ semi tethered jailbreak
+Homepage: https://www.trfree.org
+Description: TRfree-maintained checkm8 jailbreak fork
+ TRra1n is the TRfree-maintained fork of palera1n.
  based on the checkm8 exploit.
  .
  palera1n is able to jailbreak the device in fakefs-rootful mode,
  where / is writable, as well as rootless mode, where / cannot be
  written to.
  .
- IMPORTANT: This does NOT make palera1n untethered or allow you to
+ IMPORTANT: This does NOT make TRra1n untethered or allow you to
  jailbreak your current device without a computer. It just allows
  you to jailbreak another iDevice using this device, given you have
  an appropriate cable. Also, the success rate is likely to be bad.
