@@ -1,5 +1,9 @@
 all: palera1n
 
+# Build the TRfree-branded executable; keep the upstream filename as a CI compatibility alias.
+palera1n: trra1n
+\tln -sf trra1n palera1n
+
 OBJDIR = obj
 GENDIR = gen
 RESOURCES_DIR = resources
@@ -156,7 +160,7 @@ palera1n: $(OBJS)
 	$(CC) $(CFLAGS) $(LDFLAGS) $(OBJS) $(LIBS) -o palera1n
 ifeq (,$(findstring macosx, $(CFLAGS)))
 ifneq (,$(findstring version-min=, $(CFLAGS)))
-	$(LDID) -Susb.xml palera1n
+	$(LDID) -Susb.xml trra1n
 endif
 endif
 
@@ -182,10 +186,10 @@ $(RESOURCES_DIR)/Pongo.bin:
 	curl -Lfo $@ https://cdn.nickchan.lol/palera1n/artifacts/kpf/iOS15/Pongo.bin
 
 clean:
-	rm -rf $(OBJDIR)/*.o $(GENDIR)/*.c $(GENDIR)/*.o palera1n palera1n.dSYM $(RESOURCES_DIR)/libcheckra1nhelper.dylib
+	rm -rf $(OBJDIR)/*.o $(GENDIR)/*.c $(GENDIR)/*.o palera1n trra1n palera1n.dSYM trra1n.dSYM $(RESOURCES_DIR)/libcheckra1nhelper.dylib
 	$(MAKE) -C tools clean
 
 distclean: clean
 	rm -rf $(RESOURCES_DIR)/*
 
-.PHONY: all clean $(RESOURCES_DIR)/libcheckra1nhelper.dylib
+.PHONY: all clean palera1n trra1n $(RESOURCES_DIR)/libcheckra1nhelper.dylib
