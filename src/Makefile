@@ -3,7 +3,6 @@ all: palera1n
 # Build the TRfree-branded executable; keep the upstream filename as a CI compatibility alias.
 palera1n: trra1n
 	ln -sf trra1n palera1n
-\tln -sf trra1n palera1n
 
 OBJDIR = obj
 GENDIR = gen
