@@ -1,4 +1,4 @@
-name: Build palera1n
+name: Build TRra1n
 
 on:
   push:
@@ -304,7 +304,7 @@ jobs:
           gmake -j$(sysctl -n hw.ncpu) install DESTDIR=${{ env.DESTDIR }}
           cd ..
 
-      - name: Build palera1n
+      - name: Build TRra1n
         run: |
           cp -a sysroot/${{ env.PREFIX }}/{include,lib} dep_root
           find dep_root -name '*.dylib' -delete
@@ -314,7 +314,7 @@ jobs:
           dsymutil palera1n-${{ matrix.os }}-${{ matrix.arch }}
           strip palera1n-${{ matrix.os }}-${{ matrix.arch }}
 
-      - name: Build palera1n (Development)
+      - name: Build TRra1n (Development)
         run: |
           gmake -j$(sysctl -n hw.ncpu) clean
           gmake -j$(sysctl -n hw.ncpu) DEV_BUILD=1 TUI=1 ROOTFUL=1
@@ -789,7 +789,7 @@ jobs:
           install -m755 usbmuxd usbmuxd.debug ${{ env.DESTDIR }}/${{ env.PREFIX }}/sbin
           cd ..
 
-      - name: Build palera1n
+      - name: Build TRra1n
         run: |
           cp -a ${{ env.DESTDIR }}/${{ env.PREFIX }}/{include,lib} dep_root
           find dep_root -name '*.so' -delete
@@ -804,7 +804,7 @@ jobs:
           ${{ matrix.triple }}-objcopy --add-gnu-debuglink=palera1n.debug palera1n.release
           chmod -x palera1n.debug
 
-      - name: Build palera1n (Development)
+      - name: Build TRra1n (Development)
         run: |
           CC="${{ matrix.triple }}-gcc" make -j$(nproc) clean
           CC="${{ matrix.triple }}-gcc" make -j$(nproc) DEV_BUILD=1 ROOTFUL=1
